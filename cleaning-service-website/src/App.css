@@ -32,7 +32,47 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+
+li {
+  list-style: none;
+}
+
+/* nav bar */
+.custom-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-collapse {
+  justify-content: center;
+}
+
+.signIn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width:998px) {
+  .signIn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.navbarColor {
+  background: linear-gradient(132deg, rgba(53, 53, 103, 1) 0%, rgba(10, 10, 47, 1) 17%, rgba(9, 7, 37, 1) 36%, rgba(10, 2, 31, 1) 66%, rgba(107, 118, 210, 1) 78%, rgba(36, 46, 126, 1) 89%, rgba(92, 95, 121, 1) 100%);
+}
+
+/* footer */
+.WrostDesignIHaveSeenInMyLife {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: linear-gradient(90deg, rgba(8, 8, 33, 1) 20%, rgba(18, 18, 68, 1) 48%, rgba(8, 8, 33, 1) 80%);
+}
+
