@@ -1,0 +1,145 @@
+.contact-page
+{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+
+}
+
+.form-data
+{
+  text-align: left;
+  width: 50%;
+  height: auto;
+  margin: 40px;
+  
+}
+
+.map
+{
+  width: 35%;
+  height: auto;
+  margin: 10px;
+}
+
+.submit-button
+{
+  width: 100%;
+}
+
+.contact-info
+{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.phoneImg
+{
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
+}
+
+
+.phone-contact
+{
+  width: 27%;
+  display: flex;
+  height: auto;
+  margin: 0%;
+}
+
+.phone-img1
+{
+  
+  padding: 0%;
+  margin: 0%;
+}
+
+.phone-form
+{
+  display: flex;
+  align-items: left;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 20px;
+}
+
+.fax-contact
+{
+  width: 27%;
+  display: flex;
+  height: auto;
+  margin: 0%;
+}
+
+.fax-img1
+{
+  
+  padding: 0%;
+  margin: 0%;
+}
+
+.faxImg
+{
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.fax-form
+{
+  display: flex;
+  align-items: left;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 20px;
+}
+
+
+.email-form
+{
+  display: flex;
+  align-items: left;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 20px;
+}
+
+
+.email-contact
+{
+  width: 27%;
+  display: flex;
+  height: auto;
+  margin: 0%;
+}
+
+.email-img1
+{
+  
+  padding: 0%;
+  margin: 0%;
+}
+
+.emailImg
+{
+  width: auto;
+  height: 30px;
+  margin-top: 10px;
+}
+
+
+
+.p1{
+  margin: 0%;
+}
+
+.p2
+{
+  margin: 0%;
+  color: dodgerblue;
+}

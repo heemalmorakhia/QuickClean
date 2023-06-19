@@ -1,5 +1,6 @@
 import FaqPage from './pages/faqpage';
 import './App.css';
+import Contact from './pages/contact.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -13,9 +14,11 @@ function App() {
             element={<FaqPage />}
           />
 
+          <Route path='/contact' element={<Contact />} />
+
           {/* set up pages for other routes similarly. home page is "/" */}
      
-     
+
         </Routes>
       </Router>
 
