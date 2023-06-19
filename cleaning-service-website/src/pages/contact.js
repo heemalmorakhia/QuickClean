@@ -12,6 +12,7 @@ function Contact() {
     <PageLayout>
     <div className="contact-page">
      {/* <Container className='cotact-container'> */}
+     
             
         <div className='form-data'>
             <h1>Get In <span style={{color: "blue", fontSize:48, fontWeight:"bold"}}>Touch</span> </h1>
