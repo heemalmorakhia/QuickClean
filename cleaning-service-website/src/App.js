@@ -14,7 +14,8 @@ function App() {
           />
 
           {/* set up pages for other routes similarly. home page is "/" */}
-
+     
+     
         </Routes>
       </Router>
 
