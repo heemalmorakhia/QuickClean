@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+<!--- The following README.md sample file was adapted from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md by Gabriella Mosquera for academic use --->
+<!--- You may delete any comments in this sample README.md file. If needing to use as a .txt file then simply delete all comments, edit as needed, and save as a README.txt file --->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Group Project - Group 25 - CSCI 4177
 
-## Available Scripts
+This is the "Login" page for QuickClean Project by Group 25. It is submitted here to fulfil A1 - Individual requirements. This is only a front-end mock up with field validation. The links on the site are not functional as now but their names suggest their use in the future when other pages have been built.
 
-In the project directory, you can run:
+- _Date Created_: date_created
+- _Hosted URL_: hosted_url
+- _Git URL_: https://git.cs.dal.ca/hoque/csci-4177-grp-25/-/tree/main
 
-### `npm start`
+## Authors
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Shun Li](sh615496@dal.ca) - B00826442
+- [Tasneem Hoque](ts562346@dal.ca) - B00841761
+- [Mirazul Islam](mirazul.islam@dal.ca) - B00833998
+- [Heemal Morakhia](heemal.morakhia@dal.ca) - B00825718
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built With
 
-### `npm test`
+<!--- Provide a list of the frameworks used to build this application, your list should include the name of the framework used, the url where the framework is available for download and what the framework was used for, see the example below --->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [create-react-app](https://create-react-app.dev/) - Tool used to create base react project
+- [ReactJS](https://react.dev/) - The web framework used
+- [Bootstrap](https://getbootstrap.com/) - Framework ued for styling
+- [Bootstrap Icons](https://icons.getbootstrap.com/) - Framework for social media icons used
+- [Netlify](https://www.netlify.com/) - Used to deploy website online
 
-### `npm run build`
+## Testing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- enter_testing_stuff
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## References
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. This project was hosted globally using Netlify - https://www.netlify.com/.
+3. Figma. Used to create the main wireframe for all pages in the website. URL: https://www.figma.com/. Year Published: 2023. Date Accessed: 20 June 2023.
+4. Bootstrap Documentation. Stylesheet used in the website to design it. URL: https://getbootstrap.com/docs/5.3/getting-started/introduction/. Year Published: 2023. Date Accessed: 20 June 2023.
+5. Bootstrap Icons Documentation. Packages used for social media icons present at the bottom of the homepage page. URL: https://icons.getbootstrap.com/. Year Published: 2023. Date Accessed: 20 June 2023.
+6. stockking - freepik.com. cleaning-person.png used on homepage besides headline. Modified using freepik.com's editing tool to remove background. URL: https://www.freepik.com/free-photo/smiling-holding-points-bucket-cleaning-tools-young-africanamerican-cleaner-male-uniform-with-gloves-isolated-green-background_27467809.htm#query=cleaning%20services&position=13&from_view=keyword&track=ais. Year Published: Not provided - 2023 (Freepik update). Date Accessed: 20 June 2023.
+7. jemastock - freepik.com. video-image-link.jpg used on the homepage under "Know us better" section. URL: https://www.freepik.com/free-vector/cleaners-with-cleaning-products-housekeeping-service_4887688.htm#query=cleaning%20cartoon&position=0&from_view=keyword&track=ais. Year Published: Not provided - 2023 (Freepik update). Date Accessed: 20 June 2023.
+8. Canva. Created logo.png using Canva - Free version. URL: https://www.canva.com/. Year Published: 2023. Date Accessed: 20 June 2023.
+9. favicon.io. Online tool used to generate favicon.ico, logo192.png. logo512.png. URL: https://favicon.io/favicon-converter/. Year Published: 2023. Date Accessed: 20 June 2023.
+10. Lorem Ipsum. Created dummy text that is used across all pages in the website. URL: https://www.lipsum.com/. Year Published: 2023. Date Accessed: 20 June 2023.
