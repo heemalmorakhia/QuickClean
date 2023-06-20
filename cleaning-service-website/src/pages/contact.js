@@ -284,7 +284,7 @@ function Contact() {
               <MarkerF position={{ lat: 45.2, lng: 10 }} />
             </GoogleMap>
           )}
-          ;{!isLoaded && <h2>Loading.....</h2>}
+          {!isLoaded && <h2>Loading.....</h2>}
         </div>
       </div>
     </PageLayout>
