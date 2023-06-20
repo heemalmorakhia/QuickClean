@@ -1,46 +1,13 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 li {
   list-style: none;
+}
+
+.logo {
+  width: 10%;
+}
+
+.logo-footer {
+  width: 50% !important;
 }
 
 /* nav bar */
@@ -58,21 +25,114 @@ li {
   justify-content: flex-end;
 }
 
-@media screen and (max-width:998px) {
+@media screen and (max-width: 998px) {
   .signIn {
     display: flex;
+    justify-content: center;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  .homepage-top div,
+  .homepage-booking div,
+  .us div {
+    justify-content: center;
+  }
+
+  .lns div {
+    margin-bottom: 15px;
+  }
+
+  .lns-rc div {
+    width: 90%;
+    margin: auto;
+  }
+
+  .us-v div {
+    padding: 12px !important;
+  }
+
+  .homepage-video {
+    width: 94% !important;
+    margin-top: 10px !important;
+  }
+
+  .logo-footer-div {
     justify-content: center;
   }
 }
 
 .navbarColor {
-  background: linear-gradient(132deg, rgba(53, 53, 103, 1) 0%, rgba(10, 10, 47, 1) 17%, rgba(9, 7, 37, 1) 36%, rgba(10, 2, 31, 1) 66%, rgba(107, 118, 210, 1) 78%, rgba(36, 46, 126, 1) 89%, rgba(92, 95, 121, 1) 100%);
+  background: linear-gradient(
+    132deg,
+    rgba(53, 53, 103, 1) 0%,
+    rgba(10, 10, 47, 1) 17%,
+    rgba(9, 7, 37, 1) 36%,
+    rgba(10, 2, 31, 1) 66%,
+    rgba(107, 118, 210, 1) 78%,
+    rgba(36, 46, 126, 1) 89%,
+    rgba(92, 95, 121, 1) 100%
+  );
 }
 
 /* footer */
 .WrostDesignIHaveSeenInMyLife {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: linear-gradient(90deg, rgba(8, 8, 33, 1) 20%, rgba(18, 18, 68, 1) 48%, rgba(8, 8, 33, 1) 80%);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 33, 1) 20%,
+    rgba(18, 18, 68, 1) 48%,
+    rgba(8, 8, 33, 1) 80%
+  );
 }
 
+.list-group-item {
+  border: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.top-boxes div {
+  background-color: #0c1a3d;
+  border: 1px solid #0c1a3d;
+  color: aliceblue;
+}
+
+.us-wwa {
+  background-color: #0c1a3d;
+  color: white;
+}
+
+.us-wwd {
+  background-color: whitesmoke;
+}
+
+.us i {
+  font-size: 40px;
+}
+
+.top button,
+.booking button,
+.us button {
+  border-radius: 0 !important;
+}
+
+.homepage-booking-form {
+  background-color: whitesmoke;
+}
+
+.homepage-top {
+  background: linear-gradient(
+    132deg,
+    rgba(53, 53, 103, 1) 0%,
+    rgba(10, 10, 47, 1) 17%,
+    rgba(9, 7, 37, 1) 36%,
+    rgba(10, 2, 31, 1) 66%,
+    rgba(107, 118, 210, 1) 78%,
+    rgba(36, 46, 126, 1) 89%,
+    rgba(92, 95, 121, 1) 100%
+  );
+}
