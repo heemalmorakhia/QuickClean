@@ -213,13 +213,13 @@ const Home = () => {
                 </span>
                 <br />
                 <div className="d-flex">
-                  <a href="#" className="text-dark me-4">
+                  <a href="/" className="text-dark me-4">
                     <i className="bi bi-instagram" />
                   </a>
-                  <a href="#" className="text-dark me-4">
+                  <a href="/" className="text-dark me-4">
                     <i className="bi bi-facebook" />
                   </a>
-                  <a href="#" className="text-dark me-4">
+                  <a href="/" className="text-dark me-4">
                     <i className="bi bi-twitter" />
                   </a>
                 </div>

@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
 import Logo from "../logo.png";
 
 function NavigationBar({ setBackground = true }) {
@@ -39,7 +38,7 @@ function NavigationBar({ setBackground = true }) {
               <div className="w-50 signIn">
                 <a
                   className="text-decoration-none text-white border p-1 rounded"
-                  href="#"
+                  href="/"
                 >
                   Sign In
                 </a>

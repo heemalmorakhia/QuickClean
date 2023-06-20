@@ -5,10 +5,11 @@
 
 This is a web application for the QuickClean project of Group 25 in CSCI 4177. It includes three pages: Home, Contact, FAQ. It is to be submitted as a requirement for the Proposal.
 
-* *Date Created*: 15 06 2023
-* *Last Modification Date*: 20 06 2023
-- _Hosted URL_: hosted_url
-- _Git URL_: https://git.cs.dal.ca/hoque/csci-4177-grp-25/-/tree/main
+- _Date Created_: 15 06 2023
+- _Last Modification Date_: 20 06 2023
+
+* _Hosted URL_: hosted_url
+* _Git URL_: https://git.cs.dal.ca/hoque/csci-4177-grp-25/-/tree/main
 
 ## Authors
 
@@ -26,10 +27,6 @@ This is a web application for the QuickClean project of Group 25 in CSCI 4177. I
 - [Bootstrap](https://getbootstrap.com/) - Framework ued for styling
 - [Bootstrap Icons](https://icons.getbootstrap.com/) - Framework for social media icons used
 - [Netlify](https://www.netlify.com/) - Used to deploy website online
-
-## Testing
-
-- enter_testing_stuff
 
 ## References
 
@@ -53,4 +50,3 @@ This is a web application for the QuickClean project of Group 25 in CSCI 4177. I
 18. Regex pattern including all special characters, URL: https://www.w3docs.com/snippets/java/regex-pattern-including-all-special-characters.html
 19. special characters check, URL: https://www.regextester.com/99810
 20. Web Zone (Oct 31, 2017). css div box responsive using flexbox | css flexbox tutorial. URL: https://www.youtube.com/watch?v=0SktamdLLAQ
-
