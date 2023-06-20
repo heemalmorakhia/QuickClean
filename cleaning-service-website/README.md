@@ -3,7 +3,7 @@
 
 # Group Project - Group 25 - CSCI 4177
 
-This is the "Login" page for QuickClean Project by Group 25. It is submitted here to fulfil A1 - Individual requirements. This is only a front-end mock up with field validation. The links on the site are not functional as now but their names suggest their use in the future when other pages have been built.
+This is a web application for the QuickClean project of Group 25 in CSCI 4177. It includes three pages: Home, Contact, FAQ. It is to be submitted as a requirement for the Proposal.
 
 - _Date Created_: date_created
 - _Hosted URL_: hosted_url
