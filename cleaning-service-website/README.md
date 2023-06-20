@@ -5,11 +5,11 @@
 
 This is a web application for the QuickClean project of Group 25 in CSCI 4177. It includes three pages: Home, Contact, FAQ. It is to be submitted as a requirement for the Proposal.
 
-- _Date Created_: 15 06 2023
-- _Last Modification Date_: 20 06 2023
+- _Date Created:_ 15-06-2023
+- _Last Modification Date:_ 20-06-2023
 
-* _Hosted URL_: hosted_url
-* _Git URL_: https://git.cs.dal.ca/hoque/csci-4177-grp-25/-/tree/main
+* _Hosted URL:_ https://4177-proposal-app-group-25.netlify.app/
+* _Git URL:_ https://git.cs.dal.ca/hoque/csci-4177-grp-25/-/tree/main
 
 ## Authors
 
