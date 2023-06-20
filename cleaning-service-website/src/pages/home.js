@@ -1,6 +1,7 @@
 import cleaningPerson from "../images/cleaning-person.png";
 import NavigationBar from "../components/navbar";
 import Footer from "../components/footer";
+import videoLinkImg from "../images/video-image-link.jpg";
 
 const Home = () => {
   return (
@@ -177,7 +178,16 @@ const Home = () => {
           </div>
           <div className="row mt-1 mb-4 us-v">
             <div className="col-md-5 col-sm-12 border mb-1 homepage-video">
-              video here
+              <a
+                className="text-decoration-none"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              >
+                <img
+                  className="img-fluid"
+                  src={videoLinkImg}
+                  alt="link to cleaning service video"
+                />
+              </a>
             </div>
             <div className="col-md-7 col-sm-12 ps-5">
               <div className="row">
