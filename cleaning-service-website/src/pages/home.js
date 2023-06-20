@@ -19,7 +19,7 @@ const Home = () => {
                 at volutpat odio. Morbi tincidunt diam nec auctor mollis. Ut in
                 placerat lectus.
               </span>
-              <div className="d-flex flex-wrap mt-2 top-boxes">
+              <div className="d-flex flex-wrap mt-2 homepage-top-boxes">
                 <div className="p-2 me-3 mb-3">
                   <i className="bi bi-star-fill" /> 4.5 out of 5
                 </div>
@@ -45,7 +45,7 @@ const Home = () => {
       <main>
         <br />
         <div className="container homepage-booking mb-5">
-          <div className="booking-buttons d-flex mb-2">
+          <div className="d-flex mb-2">
             <button
               type="button"
               className="btn btn-md p-2 btn-light text-primary me-2"
@@ -119,8 +119,8 @@ const Home = () => {
             </div>
           </form>
         </div>
-        <div className="container us d-flex flex-wrap">
-          <div className="row mt-4 mb-4 lns">
+        <div className="container homepage-us d-flex flex-wrap">
+          <div className="row mt-4 mb-4 homepage-lns">
             <div className="col-md-5 col-sm-12">
               <h1>Let The Numbers Speak For Us</h1>
               <span className="text-secondary">
@@ -133,7 +133,7 @@ const Home = () => {
               <button className="btn btn-md btn-primary">Learn More</button>
             </div>
             <div className="col-md-1 col-sm-0"></div>
-            <div className="col-md-6 col-sm-12 text-center lns-rc">
+            <div className="col-md-6 col-sm-12 text-center homepage-lns-rc">
               <div className="row">
                 <div className="col border-end">
                   <span className="text-secondary">Our Revenue</span>
@@ -176,7 +176,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="row mt-1 mb-4 us-v">
+          <div className="row mt-1 mb-4 homepage-knb-p2">
             <div className="col-md-5 col-sm-12 border mb-1 homepage-video">
               <a
                 className="text-decoration-none"
@@ -191,7 +191,7 @@ const Home = () => {
             </div>
             <div className="col-md-7 col-sm-12 ps-5">
               <div className="row">
-                <span className="us-wwa p-4 mb-3">
+                <span className="homepage-us-wwa p-4 mb-3">
                   <h3 className="fw-bold">Who We Are</h3>
                   Nunc ultrices, leo sed convallis feugiat, ante augue finibus
                   mi, egestas auctor arcu tortor at erat. Integer nec egestas
@@ -201,7 +201,7 @@ const Home = () => {
                   sociosqu ad litora torquent per conubia nostra, per inceptos
                   himenaeos.
                 </span>
-                <span className="us-wwd p-4 mb-3">
+                <span className="homepage-us-wwd p-4 mb-3">
                   <h3 className="fw-bold">Who We Do</h3>
                   Nunc ultrices, leo sed convallis feugiat, ante augue finibus
                   mi, egestas auctor arcu tortor at erat. Integer nec egestas
@@ -212,7 +212,7 @@ const Home = () => {
                   himenaeos.
                 </span>
                 <br />
-                <div className="us-social-media d-flex">
+                <div className="d-flex">
                   <a href="#" className="text-dark me-4">
                     <i className="bi bi-instagram" />
                   </a>
