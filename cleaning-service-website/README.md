@@ -5,7 +5,8 @@
 
 This is a web application for the QuickClean project of Group 25 in CSCI 4177. It includes three pages: Home, Contact, FAQ. It is to be submitted as a requirement for the Proposal.
 
-- _Date Created_: date_created
+* *Date Created*: 15 06 2023
+* *Last Modification Date*: 20 06 2023
 - _Hosted URL_: hosted_url
 - _Git URL_: https://git.cs.dal.ca/hoque/csci-4177-grp-25/-/tree/main
 
@@ -42,3 +43,14 @@ This is a web application for the QuickClean project of Group 25 in CSCI 4177. I
 8. Canva. Created logo.png using Canva - Free version. URL: https://www.canva.com/. Year Published: 2023. Date Accessed: 20 June 2023.
 9. favicon.io. Online tool used to generate favicon.ico, logo192.png. logo512.png. URL: https://favicon.io/favicon-converter/. Year Published: 2023. Date Accessed: 20 June 2023.
 10. Lorem Ipsum. Created dummy text that is used across all pages in the website. URL: https://www.lipsum.com/. Year Published: 2023. Date Accessed: 20 June 2023.
+11. Google Maps Platform (Mar 23, 2022). How to load Maps JavaScript API in React. URL: https://www.youtube.com/watch?v=9e-5QHpadi0&t=263s
+12. Steven Gliebe(February 22, 2021). how to fix “this page didn’t load google maps correctly” error. URL: https://churchthemes.com/page-didnt-load-google-maps-correctly/
+13. James Dietrich. How to Refresh a Page or Component in React. URL: https://upmostly.com/tutorials/how-to-refresh-a-page-or-component-in-react#:~:text=Method%201%3A%20Refresh%20a%20Page%20Using%20JavaScript&text=window.location.reload(false,cached%20version%20of%20the%20page.
+14. Prathamesh Gunde(Nov 8, 2022). Integration of Google Maps with React | Part 1. URL: https://medium.com/scalereal/integration-of-google-maps-with-react-part-1-86c075ab452a
+15. Omari,T(22 March 2023).How to Validate Email Addresses with Ease in React. URL: https://upmostly.com/tutorials/how-to-validate-email-addresses-with-ease-in-react
+16. xanatos(15 Jan, 2021). Regex pattern including all special characters. URL: https://stackoverflow.com/questions/18057962/regex-pattern-including-all-special-characters
+17. Treycos (Sep 2, 2020). React router, pass data when navigating programmatically?. URL: https://stackoverflow.com/questions/42173786/react-router-pass-data-when-navigating-programmatically
+18. Regex pattern including all special characters, URL: https://www.w3docs.com/snippets/java/regex-pattern-including-all-special-characters.html
+19. special characters check, URL: https://www.regextester.com/99810
+20. Web Zone (Oct 31, 2017). css div box responsive using flexbox | css flexbox tutorial. URL: https://www.youtube.com/watch?v=0SktamdLLAQ
+
