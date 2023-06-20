@@ -1,4 +1,3 @@
-
 import '../css/contact.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col, Form, FloatingLabel, Button, Alert} from 'react-bootstrap';
@@ -6,15 +5,21 @@ import phone from '../images/phone.svg';
 import fax from '../images/fax.svg';
 import emailImage from '../images/email.svg';
 import PageLayout from '../components/layout';
-import { useState } from 'react';
+import { useState} from 'react';
+import {GoogleMap, useLoadScript, MarkerF} from "@react-google-maps/api";
 
 function Contact() {
+
+  //Email regular expression
   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
+  //Name regular  expression
   const nameRegex = /^[A-Za-z]/;
 
+  //Phone regular expression
   const phoneRegex = /^[0-9]{6,}$/;
 
+  //Comments regular expression
   const commnetsRegex = /^[A-Za-z0-9, .*@#%!^&$()_:;"<>?~`+-}{]{1,}$/;
   
   const [name, setName] = useState("");
@@ -23,6 +28,7 @@ function Contact() {
   const [comments, setComments] = useState("");
   const [option, setOption] = useState("");
 
+  //Get user input 
   const handleName = (e) =>
   {
       setName(e.target.value);
@@ -43,7 +49,10 @@ function Contact() {
     setComments(e.target.value);
   }
 
+  //Count the number of inforamtion in the correct format
   let count = 4;
+
+  //Check whether display successfully alert
   const [show, setShow] = useState(false);
   
 
@@ -51,30 +60,36 @@ function Contact() {
   const handleSubmit = (e) =>
   {
     e.preventDefault();
+
+    //Remind user the format of input information not correct
     if(!emailRegex.test(email))
     {
       document.querySelector("#email-fill").style.borderColor="#f5120a";
       count--;
     }
 
+    //Remind user the format of input information not correct
     if(!nameRegex.test(name))
     {
       document.querySelector("#name-fill").style.borderColor="#f5120a";
       count--;
     }
 
+    //Remind user the format of input information not correct
     if(!phoneRegex.test(phoneNum))
     {
       document.querySelector("#phone-fill").style.borderColor="#f5120a";
       count--;
     }
 
+    //Remind user the format of input information not correct
     if(!commnetsRegex.test(comments))
     {
       document.querySelector("#comments-fill").style.borderColor="#f5120a";
       count--;
     }
 
+    //If you all information in correct format, then show a success message
     if(count === 4)
     {
       setShow(true);
@@ -83,19 +98,24 @@ function Contact() {
 
   }
 
+  //Show success message if user send a correct formatted message
   const handleAlert = () =>
   {
     setShow(false);
     window.location.reload()
   }
- 
+
+  //Connect Google map API
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+  });
 
 
   return (
     <PageLayout>
     <div className="contact-page">
-     {/* <Container className='cotact-container'> */}
 
+    {/* Show a message if user sent message succesfully */}
      {show && (<Alert variant="success" onClose={() => setShow(false)}>
           <Alert.Heading>Successfully Sent!</Alert.Heading>
           <p>
@@ -103,6 +123,8 @@ function Contact() {
             If you have any other questions please contact us again!
             <br></br>
           </p>
+
+          {/* Button to close alert */}
           <Button onClick={handleAlert} variant="outline-success">
             Close
           </Button>
@@ -200,12 +222,26 @@ function Contact() {
 
             </div>
 
+          {/* Show the spcific location of the company. 
+              If the map loaded, then show the location of the company on the map.
+              Otherwise, show a "Loading...." message
+          */}
             <div className='map'>
-                <p>MAP</p>
-                
+                {isLoaded && (
+                  <GoogleMap
+                    mapContainerClassName="mapContainer"
+                    center={{lat: 45.2, lng: 10}}
+                    zoom={15}
+                  >
+                  <MarkerF position={{lat: 45.2, lng: 10}} />
+                  </GoogleMap>
+                )};
+
+                {!isLoaded && (
+                  <h2>Loading.....</h2>
+                )}
+  
             </div>
-            
-            {/* </Container> */}
     </div>
     </PageLayout>
   );
