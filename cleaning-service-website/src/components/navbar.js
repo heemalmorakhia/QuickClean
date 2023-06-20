@@ -25,7 +25,7 @@ function NavigationBar({ setBackground = true }) {
                 <Nav.Link style={{ color: "white" }} href="/">
                   Home
                 </Nav.Link>
-                <Nav.Link style={{ color: "white" }} href="/services">
+                <Nav.Link style={{ color: "white" }} href="/">
                   Services
                 </Nav.Link>
                 <Nav.Link style={{ color: "white" }} href="/faqs">
