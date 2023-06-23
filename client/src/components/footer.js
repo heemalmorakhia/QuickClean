@@ -9,8 +9,8 @@ function Footer() {
           className="WrostDesignIHaveSeenInMyLife"
           style={{ marginBottom: "30px" }}
         ></div>
-        <div class="container">
-          <div class="row">
+        <div className="container">
+          <div className="row">
             <div className="col-sm mb-4">
               <div className="row logo-footer-div">
                 <img className="logo-footer" src={Logo} alt="company logo" />

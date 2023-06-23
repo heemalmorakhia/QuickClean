@@ -2,7 +2,10 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../logo.png";
+import Auth from '../utilities/auth';
+import { Link } from 'react-router-dom';
 
 function NavigationBar({ setBackground = true }) {
   return (
@@ -36,12 +39,36 @@ function NavigationBar({ setBackground = true }) {
                 </Nav.Link>
               </Nav>
               <div className="w-50 signIn">
-                <a
-                  className="text-decoration-none text-white border p-1 rounded"
-                  href="/"
-                >
-                  Sign In
-                </a>
+                {Auth.loggedIn()
+                  ?
+                  <div>
+                    <NavDropdown className=' text-decoration-none text-white border p-1 rounded' title="Account" id="collasible-nav-dropdown">
+                      <div className="d-flex justify-content-center">
+                        <ul className="list-group list-group-flush">
+                          <li className="list-group-item ">
+                            <Link className="text-decoration-none" style={{ color: "black" }} to="/edit-profile">Edit Profile</Link>
+
+                          </li>
+
+                          <li className="list-group-item signOutLi" onClick={() => Auth.logout()}>
+                            Sign Out
+                          </li>
+                        </ul>
+                      </div>
+
+                    </NavDropdown>
+
+                  </div>
+
+                  :
+                  <Link
+                    className="text-decoration-none text-white border p-1 rounded"
+                    to="/signin"
+                  >
+                    Sign In
+                  </Link>
+                }
+
               </div>
             </div>
           </Navbar.Collapse>

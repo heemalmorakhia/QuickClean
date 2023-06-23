@@ -99,6 +99,15 @@ li {
   padding-right: 0 !important;
 }
 
+.custom-dropdown{
+  display: flex;
+  justify-content: center;
+}
+
+.signOutLi{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 998px) {
   .App {
     text-align: center;
@@ -109,7 +118,7 @@ li {
     display: flex;
     justify-content: center;
   }
-
+  
   /* homepage */
   .homepage-top div,
   .homepage-booking div,
