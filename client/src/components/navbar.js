@@ -7,8 +7,16 @@ import Logo from "../logo.png";
 import Auth from "../utilities/auth";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useQuery } from '@apollo/client';
+import { QUERY_USER } from '../utilities/queries';
 
 function NavigationBar({ setBackground = true }) {
+
+  const { loading, data } = useQuery(QUERY_USER);
+
+  const user = data?.user || {};
+  console.log(user)
+
   return (
     <div>
       <Navbar
@@ -49,6 +57,32 @@ function NavigationBar({ setBackground = true }) {
                     >
                       <div className="d-flex justify-content-center">
                         <ul className="list-group list-group-flush">
+
+                          {user.isAdmin ?
+                            <li className="list-group-item ">
+                              <Link
+                                className="text-decoration-none"
+                                style={{ color: "black" }}
+                                to="/admin"
+                              >
+                                Admin Dashboard
+                              </Link>
+                            </li>
+                            :
+                            ""}
+
+                          {user.isAdmin ?
+                            <li className="list-group-item ">
+                              <Link
+                                className="text-decoration-none"
+                                style={{ color: "black" }}
+                                to="/admin-message"
+                              >
+                                Messages
+                              </Link>
+                            </li>
+                            :
+                            ""}
                           <li className="list-group-item ">
                             <Link
                               className="text-decoration-none"

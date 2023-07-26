@@ -26,16 +26,14 @@ li {
 }
 
 .navbarColor {
-  background: linear-gradient(
-    132deg,
-    rgba(53, 53, 103, 1) 0%,
-    rgba(10, 10, 47, 1) 17%,
-    rgba(9, 7, 37, 1) 36%,
-    rgba(10, 2, 31, 1) 66%,
-    rgba(107, 118, 210, 1) 78%,
-    rgba(36, 46, 126, 1) 89%,
-    rgba(92, 95, 121, 1) 100%
-  );
+  background: linear-gradient(132deg,
+      rgba(53, 53, 103, 1) 0%,
+      rgba(10, 10, 47, 1) 17%,
+      rgba(9, 7, 37, 1) 36%,
+      rgba(10, 2, 31, 1) 66%,
+      rgba(107, 118, 210, 1) 78%,
+      rgba(36, 46, 126, 1) 89%,
+      rgba(92, 95, 121, 1) 100%);
 }
 
 /* Homepage */
@@ -69,28 +67,24 @@ li {
 }
 
 .homepage-top {
-  background: linear-gradient(
-    132deg,
-    rgba(53, 53, 103, 1) 0%,
-    rgba(10, 10, 47, 1) 17%,
-    rgba(9, 7, 37, 1) 36%,
-    rgba(10, 2, 31, 1) 66%,
-    rgba(107, 118, 210, 1) 78%,
-    rgba(36, 46, 126, 1) 89%,
-    rgba(92, 95, 121, 1) 100%
-  );
+  background: linear-gradient(132deg,
+      rgba(53, 53, 103, 1) 0%,
+      rgba(10, 10, 47, 1) 17%,
+      rgba(9, 7, 37, 1) 36%,
+      rgba(10, 2, 31, 1) 66%,
+      rgba(107, 118, 210, 1) 78%,
+      rgba(36, 46, 126, 1) 89%,
+      rgba(92, 95, 121, 1) 100%);
 }
 
 /* footer */
 .WrostDesignIHaveSeenInMyLife {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: linear-gradient(
-    90deg,
-    rgba(8, 8, 33, 1) 20%,
-    rgba(18, 18, 68, 1) 48%,
-    rgba(8, 8, 33, 1) 80%
-  );
+  background: linear-gradient(90deg,
+      rgba(8, 8, 33, 1) 20%,
+      rgba(18, 18, 68, 1) 48%,
+      rgba(8, 8, 33, 1) 80%);
 }
 
 .list-group-item {
@@ -99,12 +93,12 @@ li {
   padding-right: 0 !important;
 }
 
-.custom-dropdown{
+.custom-dropdown {
   display: flex;
   justify-content: center;
 }
 
-.signOutLi{
+.signOutLi {
   cursor: pointer;
 }
 
@@ -118,7 +112,7 @@ li {
     display: flex;
     justify-content: center;
   }
-  
+
   /* homepage */
   .homepage-top div,
   .homepage-booking div,
@@ -148,4 +142,19 @@ li {
   .logo-footer-div {
     justify-content: center;
   }
+}
+
+.tableAdmin {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  
+}
+
+.tableAdmin th,
+.tableAdmin td {
+  padding: 10px;
+  
+}
+.button-group button {
+  margin-right: 10px; 
 }
