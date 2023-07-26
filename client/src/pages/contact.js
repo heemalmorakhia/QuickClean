@@ -98,13 +98,16 @@ function Contact() {
 
     try {
       // Make the POST request to the server
-      const response = await fetch("/contactApi", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://a3-grp25-backend.onrender.com/contactApi",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
 
       if (response.ok) {
         setName("");
