@@ -1,11 +1,12 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 const { authMiddleware } = require('./utility/authentication');
-
+const cors = require('cors')
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./configuration/connection');
-
+const router = require('./routes')
 const PORT = process.env.PORT || 3001;
 const app = express();
 const server = new ApolloServer({
@@ -16,7 +17,8 @@ const server = new ApolloServer({
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
+app.use(cors())
+app.use('/',router)
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')));

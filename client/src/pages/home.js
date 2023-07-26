@@ -65,7 +65,7 @@ const Home = () => {
                 <label htmlFor="locationSelect">Location</label>
                 <br />
                 <select
-                  class="form-select"
+                  className="form-select"
                   id="locationSelect"
                   name="locationSelect"
                 >
@@ -81,7 +81,7 @@ const Home = () => {
                 <label htmlFor="serviceSelect">Service</label>
                 <br />
                 <select
-                  class="form-select"
+                  className="form-select"
                   id="serviceSelect"
                   name="serviceSelect"
                 >
@@ -97,7 +97,7 @@ const Home = () => {
                 <br />
                 <input
                   type="date"
-                  class="form-control"
+                  className="form-control"
                   id="dateBooking"
                   name="dateBooking"
                 />
@@ -107,7 +107,7 @@ const Home = () => {
                 <br />
                 <input
                   type="time"
-                  class="form-control"
+                  className="form-control"
                   id="timeBooking"
                   name="timeBooking"
                 />
