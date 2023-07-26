@@ -2,7 +2,7 @@
   "name": "cleaning-service-website",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "https://a3-grp25-backend.onrender.com",
   "dependencies": {
     "@apollo/client": "^3.7.16",
     "@react-google-maps/api": "^2.18.1",
