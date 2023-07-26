@@ -16,7 +16,8 @@ const paySchema = new Schema({
   City:{ type: String},
   cardNumber:{ type: String},
   cardHolderName:{ type: String},
-  client: {type: String}
+  client: {type: String},
+  status:{type: String, default:"Confirmation Pending"}
 });
 
 const PaySchema = mongoose.model("PaySchema",paySchema)

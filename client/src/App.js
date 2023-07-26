@@ -18,6 +18,8 @@ import Booking from "./pages/booking";
 import Scheduling from "./pages/scheduling";
 import Payment from "./pages/payment";
 import MyBookings from "./pages/myBookings";
+import AdminPage from "./pages/adminPage";
+import AdminMessage from "./pages/adminMessagePage";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -54,7 +56,8 @@ function App() {
             <Route path="/booking/scheduling/payment" element={<Payment />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Home />} />
-
+            <Route path="/admin" element={<AdminPage/>}/>
+            <Route path="/admin-message" element={<AdminMessage/>}/>
             {/* set up pages for other routes similarly. home page is "/" */}
           </Routes>
         </Router>

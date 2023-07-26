@@ -10,6 +10,7 @@ const typeDefs = gql`
         phone: String
         email: String
         password: String
+        isAdmin: Boolean
     }
 
 

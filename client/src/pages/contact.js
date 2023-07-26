@@ -57,7 +57,7 @@ function Contact() {
   //Check whether display successfully alert
   const [show, setShow] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     //Remind user the format of input information not correct
@@ -87,6 +87,35 @@ function Contact() {
     //If you all information in correct format, then show a success message
     if (count === 4) {
       setShow(true);
+    }
+
+    const data = {
+      name: name,
+      email: email,
+      phone: phoneNum,
+      comment: comments,
+    };
+
+    try {
+      // Make the POST request to the server
+      const response = await fetch("/contactApi", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setName("");
+        setEmail("");
+        setPhone("");
+        setComments("");
+      } else {
+        console.error("Error sending the contact form:", response);
+      }
+    } catch (error) {
+      console.error("Error sending the contact form:", error);
     }
   };
 

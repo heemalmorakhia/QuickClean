@@ -11,6 +11,7 @@ export const QUERY_USER = gql`
         phone
         userName
         password
+        isAdmin
     }
 }
 

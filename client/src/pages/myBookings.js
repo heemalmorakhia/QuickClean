@@ -14,7 +14,7 @@ const MyBookings = () => {
     } else {
       const profile = Auth.getProfile();
       axios
-        .get("http://localhost:3001/payschemas")
+        .get("/payschemas")
         .then((resp) => {
           const bookings = resp.data.payschemas.filter(
             (b) => b.client === profile.data.email
@@ -79,7 +79,7 @@ const MyBookings = () => {
                       {booking.Price}
                       <br />
                       <strong>Status:&nbsp;</strong>
-                      {getStatus(booking.Date)}
+                      {booking.status}
                       <br />
                     </p>
                     <p class="card-text">
