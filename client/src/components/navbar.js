@@ -5,9 +5,12 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../logo.png";
 import Auth from '../utilities/auth';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link, useNavigate} from 'react-router-dom';
 
 function NavigationBar({ setBackground = true }) {
+
+
   return (
     <div>
       <Navbar
@@ -28,8 +31,8 @@ function NavigationBar({ setBackground = true }) {
                 <Nav.Link style={{ color: "white" }} href="/">
                   Home
                 </Nav.Link>
-                <Nav.Link style={{ color: "white" }} href="/">
-                  Services
+                <Nav.Link style={{ color: "white" }} href="/booking">
+                  Booking
                 </Nav.Link>
                 <Nav.Link style={{ color: "white" }} href="/faqs">
                   FAQs
@@ -41,6 +44,7 @@ function NavigationBar({ setBackground = true }) {
               <div className="w-50 signIn">
                 {Auth.loggedIn()
                   ?
+                  
                   <div>
                     <NavDropdown className=' text-decoration-none text-white border p-1 rounded' title="Account" id="collasible-nav-dropdown">
                       <div className="d-flex justify-content-center">
@@ -61,6 +65,8 @@ function NavigationBar({ setBackground = true }) {
                   </div>
 
                   :
+
+                 
                   <Link
                     className="text-decoration-none text-white border p-1 rounded"
                     to="/signin"
