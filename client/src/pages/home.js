@@ -234,9 +234,8 @@ const Home = () => {
             <div className="row text-center mb-5">
               <h1 className="fw-bold">Services</h1>
               <span className="text-secondary">
-                Aliquam ultrices consequat nisi, a rutrum dui bibendum sed.
-                Curabitur aliquam eu sapien non pharetra. <br />
-                Suspendisse eu libero vehicula, sagittis magna a, posuere felis.
+              Our skilled and reliable team of cleaning experts is dedicated to delivering exceptional results, leaving every corner of your home or office spotless and shining bright. <br />
+              Our professional team is skilled, reliable, and dedicated to delivering exceptional results.
               </span>
             </div>
             <div className="row text-center d-flex justify-content-evenly">
@@ -244,14 +243,9 @@ const Home = () => {
                 <br />
                 <i className="bi bi-bucket-fill" />
                 <div className="card-body">
-                  <h5 className="card-title">Cleaning</h5>
+                  <h5 className="card-title">Window Cleaning</h5>
                   <span className="card-text">
-                    In est risus, mollis ac consectetur vitae, elementum sit
-                    amet justo. Maecenas neque ex, venenatis ac ligula id,
-                    pharetra imperdiet mauris. Ut lacus nibh, efficitur ut
-                    scelerisque sit amet, consectetur varius velit. Sed urna
-                    dui, elementum quis elementum aliquet, pellentesque ut
-                    dolor. Aenean eget pulvinar lacus.
+                  Specialized service aimed at cleaning windows, removing dirt, grime, and streaks, to enhance building appearance and improve natural light infiltration. Provided by professionals.
                   </span>
                 </div>
               </div>
@@ -261,11 +255,7 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Pest Control</h5>
                   <span className="card-text">
-                    Sed feugiat orci nec tincidunt rhoncus. In hac habitasse
-                    platea dictumst. Nulla facilisi. Phasellus posuere eros
-                    vitae consequat eleifend. Curabitur suscipit dolor ipsum,
-                    non sollicitudin ipsum volutpat eu. Morbi eget quam
-                    sollicitudin, iaculis justo at, cursus ipsum.
+                  Eliminating pests from homes and premises to maintain a clean and safe living environment. Conducted by skilled pest control professionals.
                   </span>
                 </div>
               </div>
@@ -275,11 +265,7 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Move-in & Out</h5>
                   <span className="card-text">
-                    Donec convallis aliquam urna, ut accumsan magna euismod nec.
-                    Sed imperdiet sagittis eleifend. Vestibulum pulvinar, ipsum
-                    sed feugiat volutpat, turpis ligula egestas nisl, quis
-                    bibendum quam leo eu quam. Suspendisse et nisl sit amet nisl
-                    facilisis hendrerit.
+                  Comprehensive cleaning service designed for transitioning in or out of a property, leaving the space immaculate, hygienic, and ready for occupancy.
                   </span>
                 </div>
               </div>
