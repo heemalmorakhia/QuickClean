@@ -45,8 +45,7 @@ function Booking(props)
                             <Card.Title>Residential Cleaning</Card.Title>
                             <Card.Title>${residentialPrice}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Thorough cleaning of homes to create a clean, hygienic, and pleasant living environment for residents. Provided by professionals or companies
                             </Card.Text>
                             <Button type="submit" variant="primary" onClick={() => handleBookClick("Residential Cleaning", residentialPrice)}>Book</Button>
                         </Card.Body>
@@ -59,8 +58,7 @@ function Booking(props)
                             <Card.Title>Pest Cleaning</Card.Title>
                             <Card.Title>${pestPrice}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Eliminating pests from homes and premises to maintain a clean and safe living environment. Conducted by skilled pest control professionals.
                             </Card.Text>
                             <Button type="submit" variant="primary" onClick={() => handleBookClick("Pest Cleaning", pestPrice)}>Book</Button>
                         </Card.Body>
@@ -73,8 +71,7 @@ function Booking(props)
                             <Card.Title>Commercial Cleaning</Card.Title>
                             <Card.Title>${commercialPrice}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Cleaning and washing windows to remove dirt and streaks, ensuring clear visibility and enhancing the appearance of buildings. Done professionally.
                             </Card.Text>
                             <Button type="submit" variant="primary" onClick={() => handleBookClick("Commercial Cleaning", commercialPrice)}>Book</Button>
                         </Card.Body>
@@ -89,8 +86,7 @@ function Booking(props)
                             <Card.Title>Carpet Cleaning</Card.Title>
                             <Card.Title>${carpetPrice}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Professional service that cleans and sanitizes carpets, removing stains, dirt, and allergens, to ensure a fresh and hygienic living environment.
                             </Card.Text>
                             <Button type="submit" variant="primary" onClick={() => handleBookClick("Carpet Cleaning", carpetPrice)}>Book</Button>
                             
@@ -104,8 +100,7 @@ function Booking(props)
                             <Card.Title>Window Cleaning</Card.Title>
                             <Card.Title>${windowPrice}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Skilled service that cleans windows, removing dirt and streaks, to enhance building aesthetics and allow more natural light inside. Done professionally.
                             </Card.Text>
                             <Button type="submit" variant="primary" onClick={() => handleBookClick("Window Cleaning", windowPrice)}>Book</Button>
                         </Card.Body>
@@ -118,8 +113,7 @@ function Booking(props)
                             <Card.Title>Move-in/Move-out Cleaning</Card.Title>
                             <Card.Title>${movePrice}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            Comprehensive cleaning service designed for transitioning in or out of a property, leaving the space immaculate, hygienic, and ready for occupancy.
                             </Card.Text>
                             <Button type="submit" variant="primary" onClick={() => handleBookClick("Move-in/Move-out Cleaning", movePrice)}>Book</Button>
                         </Card.Body>
