@@ -44,7 +44,10 @@ const Home = () => {
 
       <main>
         <br />
-        <div className="container homepage-booking mb-5">
+
+        {/* Will use later */}
+
+        {/* <div className="container homepage-booking mb-5">
           <div className="d-flex mb-2">
             <button
               type="button"
@@ -118,7 +121,7 @@ const Home = () => {
               </div>
             </div>
           </form>
-        </div>
+        </div> */}
         <div className="container homepage-us d-flex flex-wrap">
           <div className="row mt-4 mb-4 homepage-lns">
             <div className="col-md-5 col-sm-12">
@@ -270,7 +273,7 @@ const Home = () => {
                 <br />
                 <i className="bi bi-gear-fill" />
                 <div className="card-body">
-                  <h5 className="card-title">Dummy</h5>
+                  <h5 className="card-title">Move-in & Out</h5>
                   <span className="card-text">
                     Donec convallis aliquam urna, ut accumsan magna euismod nec.
                     Sed imperdiet sagittis eleifend. Vestibulum pulvinar, ipsum
