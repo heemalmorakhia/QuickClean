@@ -8,8 +8,15 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 function Scheduling(props)
 {
+  const navigate = useNavigate();
+
+  const {state} = useLocation();
+
+  
+
   const [show, setShow] = useState(false);
 
+  //Service Information
   const [firstName, setFName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,9 +26,9 @@ function Scheduling(props)
   const [address, setAddress] = useState("");
   const [postalCode, setPostalCode] = useState("");
   const [selectedCity, setSelectedCity] = useState("Halifax, Nova Scotia");
-  const navigate = useNavigate();
+  
+  const [isChecked, setIsChecked] = useState(false);
 
-  const {state} = useLocation();
 
   let count = 0;
 
@@ -81,12 +88,14 @@ function Scheduling(props)
   }
 
 
-
+  //Get data from payment
   const { 
     service,
     price
   } = state;
 
+
+  //Get data from input boxes
   const handleFName = (e) => {
     setFName(e.target.value);
   };
@@ -126,11 +135,21 @@ function Scheduling(props)
     setSelectedCity(e.target.value);
   };
 
+  // Function to handle checkbox changes
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
 
+  if(isChecked === true) {
+    count++;
+  }
+
+
+  //When the user clicks "Book" button, then submit the from the payment page
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    if(count > 7){
+    //If you user entered all the information in the correct format, then go to payment page
+    if(count > 8){
       navigate(
         '/booking/scheduling/payment', {state: {
           FirstName : firstName,
@@ -148,18 +167,21 @@ function Scheduling(props)
         }
       );
 
+      //Link to the payment page
       <Link className="text-decoration-none" style={{ color: "black" }} to="/booking/scheduling/payment" />
 
     }else
     {
+      //Alert
       setShow(true);
       window.scrollTo(0, 0);
     }
   };
-
+  
     return(
         <PageLayout>
-     
+        
+      {/* Alert */}
             <Alert show={show} variant="danger" 
             style={{
                   width: "50%", 
@@ -260,8 +282,20 @@ function Scheduling(props)
           </Col>
         </Row>
 
-
+        <Form>
+            {['checkbox'].map((type) => (
+              <div key={`default-${type}`} className="mb-3">
+                <Form.Check // prettier-ignore
+                  type={type}
+                  id={`default-${type}`}
+                  label={`I Agree to Terms and Conditions`}
+                  onChange={handleCheckboxChange}
+                />
+              </div>
+            ))}
+        </Form>
         <br />
+          
         <div className="d-flex justify-content-center">
           <Button style={{width: "50%"}} onClick={handleSubmit} type="submit" variant="success" className="submit-button">
               Continue

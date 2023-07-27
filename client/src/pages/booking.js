@@ -8,6 +8,7 @@ function Booking(props)
 {
     const navigate = useNavigate();
 
+    //Package Price
     const residentialPrice = 99.99;
     const pestPrice = 100.99;
     const commercialPrice = 68.99;
@@ -35,6 +36,7 @@ function Booking(props)
     return(
         <PageLayout>
             <Container className="text-center" style={{ padding: "50px", marginBottom: "70px" }}>
+            <h1>Booking Your Services</h1>
                 <Row className="row1">
                 <Col className="col1">
                     <Card style={{ width: '18rem'}}>

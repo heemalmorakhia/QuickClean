@@ -1,6 +1,8 @@
 const express = require("express");
 const { PaySchema, Contact } = require("../models");
 const router = express.Router();
+
+//Payment data send to the database
 router.post("/payment", async (req, res) => {
   const rs = await PaySchema.create(req.body);
   res.send({ status: 200, success: true, message: "successfully" });

@@ -41,6 +41,7 @@ function Payment(props) {
   let client = user.email;
   let taskChecker = 0;
 
+  //Get all the data from scheduling page
   const {
     FirstName,
     LastName,
@@ -55,6 +56,7 @@ function Payment(props) {
     City,
   } = state;
 
+  //Save all information from input boxes
   const [cardNumber, setCardNumber] = useState("");
   const [cardHolderName, setCardHolderName] = useState("");
   const [expiration, setExpiration] = useState("");
@@ -64,6 +66,8 @@ function Payment(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    //All data that needs to be saved into database
     const data = {
       FirstName,
       LastName,
@@ -81,6 +85,7 @@ function Payment(props) {
       client,
     };
 
+    //Information Checking
     if (masterCardRegex.test(cardNumber) || visaCardRegex.test(cardNumber)) {
       taskChecker++;
     } else {
@@ -106,10 +111,11 @@ function Payment(props) {
       document.querySelector("#cvc-fill").style.borderColor = "#f5120a";
     }
 
-    //IF
+    //If data not in the correct format, then show alert
     if (taskChecker < 4) {
       setShowAlert(true);
     } else {
+      //send data to database
       axios
         .post("https://a3-grp25-backend.onrender.com/payment", data)
         .then((res) => {
@@ -121,6 +127,7 @@ function Payment(props) {
               setShow(false);
             }, 2000);
 
+            //Back to the homepage
             setTimeout(() => {
               navigate("/");
             }, 2000);

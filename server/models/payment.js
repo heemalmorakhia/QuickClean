@@ -2,6 +2,7 @@ const mongoose = require("mongoose")
 
 const Schema = mongoose.Schema;
 
+//Data Structure
 const paySchema = new Schema({
   FirstName:{ type: String},
   LastName:{ type: String},
