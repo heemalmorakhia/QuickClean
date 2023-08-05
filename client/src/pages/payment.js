@@ -116,23 +116,21 @@ function Payment(props) {
       setShowAlert(true);
     } else {
       //send data to database
-      axios
-        .post("https://a3-grp25-backend.onrender.com/payment", data)
-        .then((res) => {
-          console.log(res);
+      axios.post("http://127.0.0.1:3001/payment", data).then((res) => {
+        console.log(res);
 
-          if (res.data && res.data.success) {
-            setShow(true);
-            setTimeout(() => {
-              setShow(false);
-            }, 2000);
+        if (res.data && res.data.success) {
+          setShow(true);
+          setTimeout(() => {
+            setShow(false);
+          }, 2000);
 
-            //Back to the homepage
-            setTimeout(() => {
-              navigate("/");
-            }, 2000);
-          }
-        });
+          //Back to the homepage
+          setTimeout(() => {
+            navigate("/");
+          }, 2000);
+        }
+      });
     }
   };
 

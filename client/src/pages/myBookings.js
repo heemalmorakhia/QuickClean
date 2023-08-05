@@ -14,7 +14,7 @@ const MyBookings = () => {
     } else {
       const profile = Auth.getProfile();
       axios
-        .get("https://a3-grp25-backend.onrender.com/payschemas")
+        .get("/payschemas")
         .then((resp) => {
           const bookings = resp.data.payschemas.filter(
             (b) => b.client === profile.data.email

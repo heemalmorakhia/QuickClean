@@ -7,9 +7,7 @@ function AdminMessage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://a3-grp25-backend.onrender.com/getContactApi"
-        );
+        const response = await fetch("/getContactApi");
         const data = await response.json();
         setMessages(data.payschemas);
       } catch (error) {

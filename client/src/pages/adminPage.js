@@ -7,9 +7,7 @@ function AdminPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://a3-grp25-backend.onrender.com/payschemas"
-        );
+        const response = await fetch("/payschemas");
         const data = await response.json();
         setData(data.payschemas);
       } catch (error) {
@@ -22,16 +20,13 @@ function AdminPage() {
 
   const handleUpdatePayment = async (id, updatedData) => {
     try {
-      const response = await fetch(
-        `https://a3-grp25-backend.onrender.com/payment/${id}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(updatedData),
-        }
-      );
+      const response = await fetch(`/payment/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updatedData),
+      });
 
       if (!response.ok) {
         console.error("Error updating payment:", response.statusText);
