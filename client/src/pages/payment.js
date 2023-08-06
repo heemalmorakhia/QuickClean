@@ -63,6 +63,10 @@ function Payment(props) {
   const [cvc, setCVC] = useState("");
   const [show, setShow] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
+  const review = {
+    rating: -1,
+    comments: "",
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -83,6 +87,7 @@ function Payment(props) {
       cardNumber,
       cardHolderName,
       client,
+      review,
     };
 
     //Information Checking

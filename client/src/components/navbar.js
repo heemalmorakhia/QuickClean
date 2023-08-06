@@ -7,15 +7,13 @@ import Logo from "../logo.png";
 import Auth from "../utilities/auth";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useQuery } from '@apollo/client';
-import { QUERY_USER } from '../utilities/queries';
+import { useQuery } from "@apollo/client";
+import { QUERY_USER } from "../utilities/queries";
 
 function NavigationBar({ setBackground = true }) {
-
   const { loading, data } = useQuery(QUERY_USER);
 
   const user = data?.user || {};
-  console.log(user)
 
   return (
     <div>
@@ -57,8 +55,7 @@ function NavigationBar({ setBackground = true }) {
                     >
                       <div className="d-flex justify-content-center">
                         <ul className="list-group list-group-flush">
-
-                          {user.isAdmin ?
+                          {user.isAdmin ? (
                             <li className="list-group-item ">
                               <Link
                                 className="text-decoration-none"
@@ -68,10 +65,11 @@ function NavigationBar({ setBackground = true }) {
                                 Admin Dashboard
                               </Link>
                             </li>
-                            :
-                            ""}
+                          ) : (
+                            ""
+                          )}
 
-                          {user.isAdmin ?
+                          {user.isAdmin ? (
                             <li className="list-group-item ">
                               <Link
                                 className="text-decoration-none"
@@ -81,8 +79,9 @@ function NavigationBar({ setBackground = true }) {
                                 Messages
                               </Link>
                             </li>
-                            :
-                            ""}
+                          ) : (
+                            ""
+                          )}
                           <li className="list-group-item ">
                             <Link
                               className="text-decoration-none"

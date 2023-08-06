@@ -179,7 +179,6 @@ function Contact() {
                 id="name-fill"
               />
             </FloatingLabel>
-            <br />
 
             <FloatingLabel
               controlId="floatingInput"
@@ -198,7 +197,6 @@ function Contact() {
                 id="email-fill"
               />
             </FloatingLabel>
-            <br />
 
             <FloatingLabel
               controlId="floatingInput"
@@ -217,7 +215,6 @@ function Contact() {
                 id="phone-fill"
               />
             </FloatingLabel>
-            <br />
             <FloatingLabel
               controlId="floatingTextarea2"
               label={
@@ -234,8 +231,7 @@ function Contact() {
                 onChange={handleComments}
               />
             </FloatingLabel>
-            <br />
-            <Form.Select>
+            <Form.Select className="mt-3">
               <option>How did you find us?</option>
               <option>Facebook</option>
               <option>Google Map</option>

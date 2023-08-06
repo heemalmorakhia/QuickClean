@@ -15,9 +15,9 @@ const Home = () => {
                 We are fully prepared to be at your service with just one call.
               </h1>
               <span className="text-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                at volutpat odio. Morbi tincidunt diam nec auctor mollis. Ut in
-                placerat lectus.
+                Our expertise in cleaning is unparalled. We are ready to clean
+                any time of the day and leave your space as clean, safe and
+                hygienic as possible.
               </span>
               <div className="d-flex flex-wrap mt-2 homepage-top-boxes">
                 <div className="p-2 me-3 mb-3">
@@ -44,92 +44,14 @@ const Home = () => {
 
       <main>
         <br />
-
-        {/* Will use later */}
-
-        {/* <div className="container homepage-booking mb-5">
-          <div className="d-flex mb-2">
-            <button
-              type="button"
-              className="btn btn-md p-2 btn-light text-primary me-2"
-            >
-              <i className="bi bi-clock-fill" /> Book a service
-            </button>
-            <button
-              type="button"
-              className="btn btn-md p-2 btn-light text-secondary"
-            >
-              <i className="bi bi-question-circle-fill" /> Ask a question
-            </button>
-          </div>
-          <form className="homepage-booking-form p-4">
-            <div className="row mb-2">
-              <div className="col-md-4 col-sm-12">
-                <label htmlFor="locationSelect">Location</label>
-                <br />
-                <select
-                  className="form-select"
-                  id="locationSelect"
-                  name="locationSelect"
-                >
-                  <option value="Halifax" selected>
-                    Halifax
-                  </option>
-                  <option value="Toronto">Toronto</option>
-                  <option value="Vancouver">Vancouver</option>
-                  <option value="Calgary">Calgary</option>
-                </select>
-              </div>
-              <div className="col-md-3 col-sm-12">
-                <label htmlFor="serviceSelect">Service</label>
-                <br />
-                <select
-                  className="form-select"
-                  id="serviceSelect"
-                  name="serviceSelect"
-                >
-                  <option value="Cleaning" selected>
-                    Cleaning
-                  </option>
-                  <option value="Pest Control">Pest Control</option>
-                  <option value="Dummy">Dummy</option>
-                </select>
-              </div>
-              <div className="col-md-2 col-sm-12">
-                <label htmlFor="dateBooking">Date</label>
-                <br />
-                <input
-                  type="date"
-                  className="form-control"
-                  id="dateBooking"
-                  name="dateBooking"
-                />
-              </div>
-              <div className="col-md-2 col-sm-12">
-                <label htmlFor="timeBooking">Time</label>
-                <br />
-                <input
-                  type="time"
-                  className="form-control"
-                  id="timeBooking"
-                  name="timeBooking"
-                />
-              </div>
-              <div className="col-md-1 col-sm-12">
-                <br />
-                <button className="btn btn-md btn-primary">Book</button>
-              </div>
-            </div>
-          </form>
-        </div> */}
         <div className="container homepage-us d-flex flex-wrap">
           <div className="row mt-4 mb-4 homepage-lns">
             <div className="col-md-5 col-sm-12">
               <h1>Let The Numbers Speak For Us</h1>
               <span className="text-secondary">
-                Quisque id sem lacinia, aliquam arcu at, elementum sapien. Etiam
-                porta molestie ante ac iaculis. Donec tempus odio vitae enim
-                dignissim, vel convallis diam semper.
+                Our clients reach from one end of Canada to the other. The
+                customer satisfaction we provide is of the highest level and is
+                evident from our revenue.
               </span>
               <br />
               <br />
@@ -165,12 +87,11 @@ const Home = () => {
               <div className="row">
                 <div className="col-md-10 col-sm-12 mb-3">
                   <span className="text-secondary">
-                    Maecenas blandit, elit et consectetur tincidunt, eros magna
-                    posuere nulla, quis aliquam est justo eget ante. Donec quis
-                    eros sit amet nibh tincidunt condimentum quis iaculis lacus.
-                    Vestibulum massa metus, hendrerit quis lectus sit amet,
-                    molestie porta velit. Etiam venenatis dui at erat volutpat
-                    lobortis.
+                    We started as the company with 4 founders just providing
+                    home cleaning services. We grew with time and experience and
+                    learned from our failures. Over time, we hired more
+                    professionals and expanded our team to reach greater
+                    heights.
                   </span>
                 </div>
                 <div className="col-md-2 col-sm-12">
@@ -196,23 +117,17 @@ const Home = () => {
               <div className="row">
                 <span className="homepage-us-wwa p-4 mb-3">
                   <h3 className="fw-bold">Who We Are</h3>
-                  Nunc ultrices, leo sed convallis feugiat, ante augue finibus
-                  mi, egestas auctor arcu tortor at erat. Integer nec egestas
-                  est, nec sollicitudin odio. Donec eros eros, blandit sit amet
-                  elit at, finibus vulputate urna. Donec eu justo mauris. Morbi
-                  tincidunt leo ac pellentesque sodales. Class aptent taciti
-                  sociosqu ad litora torquent per conubia nostra, per inceptos
-                  himenaeos.
+                  We are QuickClean, an all-round cleaning servie provider. Our
+                  goal is make spaces as clean and hygienic as possible. Our
+                  staff is super-experienced and skilled. With our goal, we aim
+                  to achieve maximum customer satisfaction.
                 </span>
                 <span className="homepage-us-wwd p-4 mb-3">
                   <h3 className="fw-bold">Who We Do</h3>
-                  Nunc ultrices, leo sed convallis feugiat, ante augue finibus
-                  mi, egestas auctor arcu tortor at erat. Integer nec egestas
-                  est, nec sollicitudin odio. Donec eros eros, blandit sit amet
-                  elit at, finibus vulputate urna. Donec eu justo mauris. Morbi
-                  tincidunt leo ac pellentesque sodales. Class aptent taciti
-                  sociosqu ad litora torquent per conubia nostra, per inceptos
-                  himenaeos.
+                  We offer all kinds of cleaning services from personal to
+                  enterprise level. These include Residential Cleaning, Pest
+                  Cleaning, Commercial Cleaning, Carpet Cleaning, Window
+                  Cleaning, Move-in/Move-out Cleaning, and others.
                 </span>
                 <br />
                 <div className="d-flex">
@@ -234,8 +149,11 @@ const Home = () => {
             <div className="row text-center mb-5">
               <h1 className="fw-bold">Services</h1>
               <span className="text-secondary">
-              Our skilled and reliable team of cleaning experts is dedicated to delivering exceptional results, leaving every corner of your home or office spotless and shining bright. <br />
-              Our professional team is skilled, reliable, and dedicated to delivering exceptional results.
+                Our skilled and reliable team of cleaning experts is dedicated
+                to delivering exceptional results, leaving every corner of your
+                home or office spotless and shining bright. <br />
+                Our professional team is skilled, reliable, and dedicated to
+                delivering exceptional results.
               </span>
             </div>
             <div className="row text-center d-flex justify-content-evenly">
@@ -245,7 +163,10 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Window Cleaning</h5>
                   <span className="card-text">
-                  Specialized service aimed at cleaning windows, removing dirt, grime, and streaks, to enhance building appearance and improve natural light infiltration. Provided by professionals.
+                    Specialized service aimed at cleaning windows, removing
+                    dirt, grime, and streaks, to enhance building appearance and
+                    improve natural light infiltration. Provided by
+                    professionals.
                   </span>
                 </div>
               </div>
@@ -255,7 +176,9 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Pest Control</h5>
                   <span className="card-text">
-                  Eliminating pests from homes and premises to maintain a clean and safe living environment. Conducted by skilled pest control professionals.
+                    Eliminating pests from homes and premises to maintain a
+                    clean and safe living environment. Conducted by skilled pest
+                    control professionals.
                   </span>
                 </div>
               </div>
@@ -265,7 +188,9 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Move-in & Out</h5>
                   <span className="card-text">
-                  Comprehensive cleaning service designed for transitioning in or out of a property, leaving the space immaculate, hygienic, and ready for occupancy.
+                    Comprehensive cleaning service designed for transitioning in
+                    or out of a property, leaving the space immaculate,
+                    hygienic, and ready for occupancy.
                   </span>
                 </div>
               </div>
