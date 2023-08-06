@@ -121,7 +121,7 @@ function Payment(props) {
       setShowAlert(true);
     } else {
       //send data to database
-      axios.post("http://127.0.0.1:3001/payment", data).then((res) => {
+      axios.post("/payment", data).then((res) => {
         console.log(res);
 
         if (res.data && res.data.success) {
