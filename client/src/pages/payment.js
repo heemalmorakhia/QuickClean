@@ -26,7 +26,7 @@ function Payment(props) {
   const visaCardRegex = /^4[0-9]{2,}$/;
 
   //cardhold Name regex
-  const cardholdNameRegex = /^[A-Za-z}{]{4,}$/;
+  const cardholdNameRegex = /^[A-Za-z }{]{4,}$/;
 
   // MM/YY format
   const dateRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
