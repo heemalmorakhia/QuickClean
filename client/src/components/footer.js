@@ -32,7 +32,7 @@ function Footer() {
                 <ul className="list-group ">
                   <li className="list-group-item">Cleaning</li>
                   <li className="list-group-item">Pest Control</li>
-                  <li className="list-group-item">Dummy</li>
+                  <li className="list-group-item">Commercial</li>
                 </ul>
               </div>
             </div>
@@ -50,7 +50,19 @@ function Footer() {
               <h4>Resources</h4>
               <div className="footerList">
                 <ul className="list-group ">
-                  <li className="list-group-item">Help Center</li>
+                  <li className="list-group-item">
+                    <a className="text-decoration-none text-dark" href="/faqs">
+                      FAQ
+                    </a>
+                  </li>
+                  <li className="list-group-item">
+                    <a
+                      className="text-decoration-none text-dark"
+                      href="/contact"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -20,19 +20,31 @@ function AdminMessage() {
 
   return (
     <PageLayout>
-      <div className="vh-100">
-        <div className="mt-5 mb-5 pt-5  pb-5 text-center">
-          <h4>Messages</h4>
-        </div>
+      <div className="container">
+        <br />
+        <h1>Messages</h1>
+        <br />
         {messages.map((message) => (
-          <div key={message._id} className="card w-50 mt-5 pt-5 mx-auto">
-            <div className="card-body">
-              <h5 className="card-title">Name: {message.name}</h5>
-              <h5 className="card-title">Email: {message.email}</h5>
-              <h5 className="card-title">Phone: {message.phone}</h5>
-              <p className="card-text">Comment: {message.comment}</p>
+          <>
+            <div key={message._id} class="card">
+              <div class="card-body">
+                <p className="card-text">
+                  <strong>Name:&nbsp;</strong>
+                  {message.name}
+                  <br />
+                  <strong>Email:&nbsp;</strong>
+                  {message.email}
+                  <br />
+                  <strong>Phone:&nbsp;</strong>
+                  {message.phone}
+                  <br />
+                  <strong>Comment:&nbsp;</strong>
+                  {message.comment}
+                </p>
+              </div>
             </div>
-          </div>
+            <br />
+          </>
         ))}
       </div>
     </PageLayout>

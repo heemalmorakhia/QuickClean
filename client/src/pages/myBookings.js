@@ -3,9 +3,11 @@ import PageLayout from "../components/layout";
 import axios from "axios";
 import Auth from "../utilities/auth";
 import { useNavigate } from "react-router-dom";
+import { Rating } from "react-simple-star-rating";
 
 const MyBookings = () => {
   const [myBookings, setMyBookings] = useState([]);
+  const [reviewOn, setReviewOn] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,21 +27,58 @@ const MyBookings = () => {
               index,
             }));
             setMyBookings(bookingsWithNo);
+
+            let r = [];
+            for (let i = 0; i < bookingsWithNo.length; i++) {
+              let st = 0;
+              if (
+                bookingsWithNo[i].status == "Completed" &&
+                bookingsWithNo[i].review.rating == -1
+              ) {
+                st = 1;
+              } else if (
+                bookingsWithNo[i].status == "Completed" &&
+                bookingsWithNo[i].review.rating != -1
+              ) {
+                st = 2;
+              }
+              r.push(st);
+            }
+
+            setReviewOn(r);
           }
         })
         .catch((err) => console.log(err));
     }
   }, []);
 
-  const getStatus = (date) => {
-    const dateT = new Date(date);
-    const dateN = new Date();
+  const handleRating = (rate, index) => {
+    const updatedBookings = [...myBookings];
+    updatedBookings[index].review.rating = rate;
+    setMyBookings(updatedBookings);
+  };
 
-    if (dateT > dateN) {
-      return <span className="text-warning">Scheduled</span>;
-    } else {
-      return <span className="text-success">Complete</span>;
-    }
+  const submitReview = (e, index) => {
+    e.preventDefault();
+
+    const review = { ...myBookings[index].review };
+    review.comments = e.target.comments.value;
+
+    console.log(review);
+
+    // call api
+    fetch("/review/" + myBookings[index]._id, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ review: review }),
+    })
+      .then((resp) => resp.json())
+      .then((j) => {
+        window.location.reload();
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -47,14 +86,14 @@ const MyBookings = () => {
       <PageLayout>
         <div className="container">
           <br />
-          <h4 className="display-4">My Bookings</h4>
-          <hr />
+          <h1>My Bookings</h1>
+          <br />
           {myBookings === null || myBookings.length == 0 ? (
             <>
               No Bookings yet. <br /> <br />
             </>
           ) : (
-            myBookings.map((booking) => (
+            myBookings.map((booking, index) => (
               <>
                 <div class="card">
                   <div class="card-body">
@@ -92,6 +131,91 @@ const MyBookings = () => {
                         ************
                       </small>
                     </p>
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#reviewModal"
+                      className={
+                        reviewOn[index] != 0
+                          ? "btn btn-primary"
+                          : "btn btn-primary d-none"
+                      }
+                      disabled={reviewOn[index] == 2}
+                    >
+                      {reviewOn[index] == 1
+                        ? "Leave a review!"
+                        : "Review Submitted"}
+                    </button>
+                    <div
+                      className="modal fade text-start"
+                      id="reviewModal"
+                      tabIndex="-1"
+                      role="dialog"
+                      aria-labelledby="reviewModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div className="modal-dialog modal-dialog-centered modal-xl">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <h1
+                              className="modal-title fs-5"
+                              id="reviewModalLabel"
+                            >
+                              Review Us
+                            </h1>
+                            <button
+                              type="button"
+                              className="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div className="modal-body">
+                            <form
+                              id="reviewForm"
+                              onSubmit={(e) => submitReview(e, index)}
+                            >
+                              <div className="mb-3">
+                                <label className="mb-1 ms-1" htmlFor="rating">
+                                  Rate us (out of 5)
+                                </label>
+                                <br />
+                                <Rating
+                                  onClick={(rate) => handleRating(rate, index)}
+                                />
+                              </div>
+                              <div className="mb-3">
+                                <label className="mb-1 ms-1" htmlFor="comments">
+                                  Comments
+                                </label>
+                                <textarea
+                                  name="comments"
+                                  className="form-control"
+                                  id="comments"
+                                />
+                              </div>
+                            </form>
+                          </div>
+                          <div className="modal-footer">
+                            <button
+                              id="reviewFormSubmit"
+                              form="reviewForm"
+                              type="submit"
+                              className="btn btn-primary"
+                            >
+                              Submit
+                            </button>
+                            <button
+                              type="button"
+                              className="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <br />
