@@ -40,7 +40,7 @@ function Scheduling(props) {
   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
   //Name regular  expression
-  const nameRegex = /^[A-Za-z]/;
+  const nameRegex = /^[A-Za-z ]/;
 
   //Phone regular expression
   const phoneRegex = /^[0-9]{6,}$/;
