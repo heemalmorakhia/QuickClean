@@ -21,9 +21,10 @@ function Scheduling(props) {
   const [show, setShow] = useState(false);
 
   //Service Information
+  const profile = Auth.getProfile();
   const [firstName, setFName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(profile.data.email);
   const [phone, setPhone] = useState("");
   const [dateBooking, setDateBooking] = useState("");
   const [timeBooking, setTimeBooking] = useState("");
@@ -32,7 +33,6 @@ function Scheduling(props) {
   const [selectedCity, setSelectedCity] = useState("Halifax, Nova Scotia");
 
   const [isChecked, setIsChecked] = useState(false);
-  const profile = Auth.getProfile();
 
   let count = 0;
 
