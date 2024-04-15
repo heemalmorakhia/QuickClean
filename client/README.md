@@ -1,9 +1,8 @@
 <!--- The following README.md sample file was adapted from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md by Gabriella Mosquera for academic use --->
-<!--- You may delete any comments in this sample README.md file. If needing to use as a .txt file then simply delete all comments, edit as needed, and save as a README.txt file --->
 
 # Group Project - Group 25 - CSCI 4177
 
-This is a web application for the QuickClean project of Group 25 in CSCI 4177. It includes three pages: Home, Contact, FAQ. It is to be submitted as a requirement for the Proposal.
+QuickClean - WebApp - Frontend. Designed to schedule/book cleaning services with different providers. Team: Shun Li, Tasneem Hoque, Mirazul Islam, and Heemal Morakhia.
 
 - _Date Created:_ 15-06-2023
 - _Last Modification Date:_ 20-06-2023
